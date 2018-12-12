@@ -8,8 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need to have the following packages installed.
-* []
+vgg19.npz must be downloaded from [VGG](https://github.com/machrisaa/tensorflow-vgg), used for its pre-trained weights as part of a loss function. Additionally, tensorflow and tensorlayer must be installed.
 
 ## Running the project
 
