@@ -62,7 +62,7 @@ To perform evaluation, execute
 ```
 python main.py --mode=evaluate
 ```
-Images resulting from the evaluation are placed in a new directory `results`.
+Images resulting from the evaluation are placed in a new directory `results`. Files with pretrained weights for each model can be found in [pretrained](https://github.com/narcomey/mri-superresolution/pretrained)
 
 ## References
 * Ledig, Christian et al. “Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network.” *2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)* (2017): 105-114.
