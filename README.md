@@ -1,6 +1,6 @@
 # MRI Super-Resolution
 
-This project implements two GAN architectures for performing super resolution of MRI data in dicom format. These are modeled after the design in the repo [Github/Tensor Layer/SRGAN](https://github.com/tensorlayer/srgan.git), which is an implementation of the paper, [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802). We process low-resolution and high-resolution versions of MRI dicom images through the SRGAN (Super-Resolution GAN) architecture to perform super-resolution with the goal to speed up MRI for vulnerable patients by taking quicker, lower resolution scans of the patient.
+This project implements two GAN architectures for performing super resolution of MRI data in dicom format, including two ResNet architectures that are used for the generator. These are modeled after the design in the repo [Github/Tensor Layer/SRGAN](https://github.com/tensorlayer/srgan.git), which is an implementation of the paper, [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802). We process low-resolution and high-resolution versions of MRI dicom images through the SRGAN (Super-Resolution GAN) architecture to perform super-resolution with the goal to speed up MRI for vulnerable patients by taking quicker, lower resolution scans of the patient.
 
 The MRI data includes a sequence of low resolution slices and a sequence of high resolution slices for each patient in grayscale. The sequences of high resolution slices contain thinner slices, producing a longer sequence. 
 
@@ -62,7 +62,7 @@ To perform evaluation, execute
 ```
 python main.py --mode=evaluate
 ```
-Images resulting from the evaluation are placed in a new directory `results`. Files with pretrained weights for each model can be found in [pretrained](https://github.com/narcomey/mri-superresolution/tree/master/pretrained)
+Images resulting from the evaluation are placed in a new directory `results`. Files with pretrained weights for each model can be found in [pretrained](https://github.com/narcomey/mri-superresolution/tree/master/pretrained).
 
 ## References
 * Ledig, Christian et al. “Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network.” *2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)* (2017): 105-114.
